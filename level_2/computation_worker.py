@@ -1,7 +1,7 @@
 import json
 import time
 
-from level_1 import log_parser
+from common import log_parser
 from level_2 import slow_computation, constants
 from level_2.config import redis_client
 

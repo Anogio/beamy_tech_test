@@ -4,8 +4,9 @@ from flask import abort
 import os
 import json
 
-from level_1 import log_parser, constants
-from level_1.log_parser import InvalidKeyValuePair
+from level_1 import constants
+from common import log_parser
+from common.log_parser import InvalidKeyValuePair
 
 
 def create_app():

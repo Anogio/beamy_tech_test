@@ -1,4 +1,4 @@
-from level_1 import log_parser
+from common import log_parser
 
 
 def test_parses_basic_key_value_mapping():
