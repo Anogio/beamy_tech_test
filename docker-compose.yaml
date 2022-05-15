@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  level_2:
+    build: .
+    ports:
+      - "3000:3000"
+    command: python -m level_2.level_2_app
+    environment:
+      - REDIS_HOST=redis
+
+  redis:
+    image: redis:4.0.10
+    ports:
+      - '6379:6379'
