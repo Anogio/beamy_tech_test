@@ -43,6 +43,15 @@ python - or current venv -not a docker)
 - `run_exercise` to make the calls to the server (uses you local
 python - or current venv -not a docker)
 
+### CI
+I created a Github action in the `workflows` folder.
+
+It is not currently working for two reasons:
+- The connection to the Redis server is failing. I assume this is only because Redis
+is not starting fast enough and we should wait for it before starting the tests.
+- As mentioned below, the tests cannot finish currently because the worker thread
+is never killed.
+
 ## Next steps
 
 - Adding better and more logging
